@@ -50,7 +50,15 @@ CRAWLBASE_API_KEY=your_api_key_here
 ```
 2. **Run all services:**
 ```
-  docker-compose up -d
+  docker-compose up
+```
+3. **Run all services:**
+```
+  docker-compose crawler_pusher
+```
+4. **Run all services:**
+```
+  docker-compose crawler_puller
 ```
 3. **Manually run the exporter:**
 ```
