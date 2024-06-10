@@ -8,8 +8,6 @@ services:
     volumes:
       - .:/app
     command: ruby /app/scripts/crawler_pusher.rb
-    depends_on:
-      - crawler_puller
 
   crawler_puller:
     build: .
@@ -23,6 +21,4 @@ services:
     build: .
     volumes:
       - .:/app
-    command: /bin/sh -c "sleep 120 && ruby /app/scripts/crawler_exporter.rb"
-    depends_on:
-      - crawler_puller
+    command: ruby /app/scripts/crawler_exporter.rb

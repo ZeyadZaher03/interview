@@ -12,4 +12,6 @@ RUN bundle install
 
 COPY . .
 
+RUN mkdir -p /app/logs
+
 CMD ["ruby", "/app/scripts/crawler_pusher.rb"]
