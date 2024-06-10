@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    crawlbase (1.0.0)
+    csv (3.3.0)
+    dotenv (3.1.2)
+    fileutils (1.7.2)
+    json (2.7.2)
+    logger (1.6.0)
+    nokogiri (1.16.5-x64-mingw-ucrt)
+      racc (~> 1.4)
+    parallel (1.25.1)
+    racc (1.8.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  crawlbase
+  csv
+  dotenv
+  fileutils
+  json
+  logger
+  nokogiri
+  parallel
+
+BUNDLED WITH
+   2.5.11
