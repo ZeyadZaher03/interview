@@ -9,6 +9,7 @@ class CrawlerPusher
     @client = Crawlbase::API.new(token: ENV['CRAWLBASE_API_KEY'])
     @asin_file = asin_file
     @max_threads = max_threads
+    FileUtils.mkdir_p('logs')
     @logger = Logger.new('logs/crawler_pusher.log', 'daily')
   end
 
